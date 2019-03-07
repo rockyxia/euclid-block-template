@@ -1,0 +1,84 @@
+{
+  "name": "euclid-block-template",
+  "version": "0.1.0",
+  "private": false,
+  "description": "EuclidUI 物料模块开发模版",
+  "author": "rockyxia",
+  "files": [
+    "src/",
+    "build/",
+    "screenshot.png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rockyxia/euclid-block-template"
+  },
+  "main": "lib/euclid-block-template.umd.min.js",
+  "license": "MIT",
+  "keywords": [
+    "euclid",
+    "block"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "lib": "vue-cli-service build --target lib --name euclid-block-template --dest lib src/index.js"
+  },
+  "dependencies": {
+    "@ebg/euclid-ui": "^0.1.4",
+    "@euclidui/basic-container": "^0.1.9",
+    "vue": "^2.6.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.1",
+    "@vue/cli-plugin-unit-mocha": "^3.1.1",
+    "@vue/cli-service": "^3.1.1",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "chai": "^4.1.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "blockConfig": {
+    "name": "euclid-block-template",
+    "title": "Euclid模块开发模版",
+    "categories": [
+      "其他"
+    ],
+    "screenshot": "https://raw.githubusercontent.com/rockyxia/euclid-block-template/master/screenshot.png"
+  }
+}
