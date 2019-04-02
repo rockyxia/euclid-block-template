@@ -27,17 +27,5 @@ module.exports = {
       .rule("eslint")
       .exclude.add(path.resolve("lib"))
       .end();
-    config.module
-      .rule("js")
-      .include.add("/src/")
-      .end()
-      .include.add("/examples/")
-      .end()
-      .use("babel")
-      .loader("babel-loader")
-      .tap(options => {
-        // 修改它的选项...
-        return options;
-      });
   }
 };
