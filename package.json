@@ -28,7 +28,7 @@
     "lib": "vue-cli-service build --target lib --name euclid-block-template --dest lib src/index.js"
   },
   "dependencies": {
-    "@ebg/euclid-ui": "^0.1.4",
+    "@ebg/euclid-ui": "^0.2.0",
     "@euclidui/basic-container": "^0.1.9",
     "vue": "^2.6.6"
   },
